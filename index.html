@@ -181,6 +181,61 @@
       </div>
     </section>
 
+    <!-- News Section -->
+<section id="news" class="news bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4"><i class="fas fa-newspaper"></i> اخبار و به‌روزرسانی‌ها</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="news-box bg-white p-4 shadow-sm">
+          <h3 class="h5"><i class="fas fa-tablet-alt"></i> پشتیبانی از تبلت‌ها</h3>
+          <p class="mb-0">
+            نسخه جدید ویوتاک با پشتیبانی کامل از تبلت‌ها منتشر شد. تجربه کاربری بهتری در دستگاه‌های بزرگ‌تر.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="news-box bg-white p-4 shadow-sm">
+          <h3 class="h5"><i class="fas fa-microchip"></i> پشتیبانی از x86 و x86_64</h3>
+          <p class="mb-0">
+            اکنون ویوتاک از پردازنده‌های x86 و x86_64 نیز پشتیبانی می‌کند. توسعه دهندگان می‌توانند از این نسخه برای اپلیکیشن‌های خود استفاده کنند.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News Pop-up Modal -->
+<div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newsModalLabel"><i class="fas fa-bullhorn"></i> اخبار جدید</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6><i class="fas fa-tablet-alt"></i> پشتیبانی از تبلت‌ها</h6>
+        <p>نسخه جدید ویوتاک با پشتیبانی کامل از تبلت‌ها منتشر شد. تجربه کاربری بهتری در دستگاه‌های بزرگ‌تر.</p>
+        <hr>
+        <h6><i class="fas fa-microchip"></i> پشتیبانی از x86 و x86_64</h6>
+        <p>اکنون ویوتاک از پردازنده‌های x86 و x86_64 نیز پشتیبانی می‌کند. توسعه دهندگان می‌توانند از این نسخه برای اپلیکیشن‌های خود استفاده کنند.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trigger Modal on Page Load -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var newsModal = new bootstrap.Modal(document.getElementById('newsModal'));
+    newsModal.show();
+  });
+</script>
+
     <!-- Features Section -->
     <section class="features py-5">
       <div class="container">
