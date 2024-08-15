@@ -1,0 +1,222 @@
+﻿
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.html');
+    src: url('../fonts/Vazird41d.html?#iefix') format('embedded-opentype'), url('../fonts/Vazir-2.html') format('woff'), url('../fonts/Vazir-3.html') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Boldd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Bold.woff') format('woff'), url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Lightd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Light.woff') format('woff'), url('assets/fonts/Vazir-Light.html') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Lightd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Light.woff') format('woff'), url('assets/fonts/Vazir-Light.html') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Light.eot');
+    src: url('../fonts/Vazir-Lightd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Light.woff') format('woff'), url('assets/fonts/Vazir-Light.html') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir-Boldd41d.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Bold.woff') format('woff'), url('../fonts/Vazir-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoone3e0.eot?5ajqqf");
+    src: url("../fonts/icomoone3e0.eot?5ajqqf#iefix") format("embedded-opentype"), url("../fonts/icomoone3e0.ttf?5ajqqf") format("truetype"), url("../fonts/icomoone3e0.woff?5ajqqf") format("woff"), url("../fonts/icomoone3e0.svg?5ajqqf#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+    content: "\e900";
+}
+
+.icon-telegram:before {
+    content: "\e901";
+}
+
+.icon-login:before {
+    content: "\e902";
+}
+
+.icon-lock:before {
+    content: "\e903";
+}
+
+.icon-android:before {
+    content: "\e904";
+}
+
+.icon-apple:before {
+    content: "\e905";
+}
+
+.icon-down:before {
+    content: "\e906";
+}
+
+.icon-right:before {
+    content: "\e907";
+}
+
+.icon-facebook:before {
+    content: "\e908";
+}
+
+.icon-instagram1:before {
+    content: "\e909";
+}
+
+.icon-login-square:before {
+    content: "\e90a";
+}
+
+.icon-twitter:before {
+    content: "\e90b";
+}
+
+.icon-left:before {
+    content: "\e90c";
+}
+
+.icon-menu-button:before {
+    content: "\e90d";
+}
+
+.icon-cancel:before {
+    content: "\e90e";
+}
+
+.icon-store:before {
+    content: "\e90f";
+}
+
+.icon-box:before {
+    content: "\e910";
+}
+
+.icon-folder:before {
+    content: "\e911";
+}
+
+.icon-property-2:before {
+    content: "\e912";
+}
+
+.icon-advantage-1:before {
+    content: "\e913";
+}
+
+.icon-advantage-2:before {
+    content: "\e914";
+}
+
+.icon-advantage-3:before {
+    content: "\e915";
+}
+
+.icon-advantage-4:before {
+    content: "\e916";
+}
+
+.icon-cooperation-1:before {
+    content: "\e917";
+}
+
+.icon-cooperation-2:before {
+    content: "\e918";
+}
+
+.icon-cooperation-3:before {
+    content: "\e919";
+}
+
+.icon-cooperation-4:before {
+    content: "\e91a";
+}
+
+.icon-cooperation-5:before {
+    content: "\e91b";
+}
+
+.icon-play-button:before {
+    content: "\e91c";
+}
+
+.icon-property-1:before {
+    content: "\e91d";
+}
+
+.icon-property-3:before {
+    content: "\e91e";
+}
+
+.icon-property-4:before {
+    content: "\e91f";
+}
+
+.icon-property-5:before {
+    content: "\e920";
+}
+
+.icon-property-6:before {
+    content: "\e921";
+}
+
+.icon-property-7:before {
+    content: "\e922";
+}
+
+.icon-property-8:before {
+    content: "\e923";
+}
+
+.icon-property-9:before {
+    content: "\e924";
+}
+
+.icon-property-10:before {
+    content: "\e925";
+}
+
+.icon-checked-1:before {
+    content: "\e926";
+}
+
+.icon-close-3:before {
+    content: "\e927";
+}

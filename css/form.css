@@ -1,0 +1,54 @@
+body{background:rgba(197, 206, 218, 0.4) url(../images/bg-2.png) top right;background-size:cover;}
+.minsx{box-shadow: 0 5px 15px 0 rgba(31,32,35,.07);width:700px;margin:20px auto;max-width:calc(100% - 40px);text-align:right}
+.main-form .logo{height:35px;margin-bottom:20px}
+.main-form .fasele{height:30px}
+.main-form .side.right{background:#fff;overflow:auto;direction:ltr;padding:0 80px;width:55%;box-shadow: 0 5px 15px 0 rgba(31,32,35,.07)}
+.main-form .side.left{background:#012b5c url(../images/bg-3.png) top right;background-size:cover;text-align:justify;overflow:auto;line-height:25px;direction:ltr;padding:0 50px;width:45%;height:100%;left:0;top:0;background-color:#012b5c}
+.minsx.main-form .side.right{padding:0 30px}
+.minsx.main-form .side.left{padding:0 30px}
+.main-form .field{position:relative;text-align:justify}
+.main-form .field.small{width:50%;float:right}
+.main-form .field.large{width:100%;float:right}
+.main-form .field input{width:calc(100% - 10px);margin:3px 5px 15px 5px;float:right;border:1px #ccc solid;border-radius:5px;padding:8px 15px;text-align:center}
+.main-form .field label{font-size:12px;color:#444;padding:0 10px}
+.main-form .field input:focus{border-color:#000}
+.main-form [type="submit"]{color:#fff;cursor:pointer;float:left;border-radius:35px;padding:10px 17px;border:0;background-color:#34B480;box-shadow: 0 6px 20px 0 rgba(52, 180, 128, 0.3);margin:5px;font-weight:800}
+.main-form .title{margin:7px 0 15px 0}
+.main-form .inf{margin-bottom:20px}
+.main-form .side.terns p{line-height:25px;color:#444}
+.main-form .side.terns p strong,.main-form .side.left a{color:#333}
+.main-form .side.terns p strong{display:inline-block;margin:15px 0 5px 0}
+.main-form .btn-action{padding:5px 17px;border: 1px solid #e6e6ea;}
+.main-form .side.left.zxczxc,.main-form .side.left.zxczxc p{line-height:initial}
+.main-form [type="checkbox"]{margin-left:5px}
+.main-form .side.left.zxczxc samp{margin-top:15px;opacity:0.7}
+.main-form .side.left.zxczxc a span{padding:7px 15px;display:inline-block;margin-top:15px}
+.register-form .side{padding:30px}
+.main-form .side.terns{transition-duration: 0s;max-height:40vh;background-color:#f5f5f5;text-align:justify;overflow:auto;line-height:25px;direction:ltr;padding:0 30px;margin-top:20px;height:300px;}
+#ternsx-btn{margin:15px 0 7px 5px}
+.formbec{min-height:100vh}
+.main-form .field input:focus{border-color:#012b5c}
+.main-form .btn-action:hover{background-color:#fafafa}
+.main-form [type="submit"]:hover{box-shadow:none}
+#ternsx-btn:hover{color:#012b5c}
+.main-form .side.left.zxczxc a span:hover{transform:scale(1.05)}
+.main-form .logo:hover{opacity:0.7}
+
+@media only screen and (max-width:620px){
+.main-form .side.right{width:100%}
+.minsx.main-form .side.left{position:relative;width:100%;height:auto}
+.minsx.main-form .side.left h5{font-size:18px}
+.main-form .btn-action{font-size:14px;padding:5px 12px}
+.main-form .side.left.zxczxc a span{margin-top:12px}
+}
+@media only screen and (max-width:440px){
+.register-form .side{padding:20px}
+.minsx.main-form .side.right,.minsx.main-form .side.left{padding:0 20px}
+.main-form .title{margin-bottom:10px;text-align:right}
+.main-form .inf{margin-bottom:13px;text-align:right}
+.main-form .field.small,.main-form .field.large{padding:3px 0;width:100%}
+.minsx{border-radius:10px}
+.main-form .title{font-size:18px}
+.main-form .side.terns .fasele{height:10px}
+.main-form .side.terns{padding: 0 15px}
+}

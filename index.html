@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-  <head>
-    <!-- Meta Tags for SEO -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
+﻿<!doctype html>
+<html>
+
+<head>
+<title>ویوتاک - اپلیکیشن ساز وب ویو اندروید</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/fonts.css">
+   <!-- FontAwesome -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+   rel="stylesheet"
+ />
+ <meta
       name="description"
       content="ویوتاک - سورس کد حرفه‌ای برای WebView اندروید. خرید سورس کد با ادغام آسان، طراحی مدرن و کاملاً پاسخگو. آماده برای انتشار در گوگل پلی."
     />
@@ -102,754 +111,449 @@
     <!-- Canonical Link -->
     <link rel="canonical" href="https://viutak.online" />
 
-    <!-- Title -->
-    <title>
-      ویوتاک - سورس کد حرفه‌ای برای WebView اندروید | خرید سورس کد اندروید
-    </title>
+	    <!-- Structured Data JSON-LD -->
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "SoftwareApplication",
+			  "name": "Viutak",
+			  "operatingSystem": "Android",
+			  "applicationCategory": "WebView Source Code",
+			  "offers": {
+				"@type": "Offer",
+				"priceCurrency": "IRR",
+				"price": "500000",
+				"url": "https://www.rtl-theme.com",
+				"seller": {
+				  "@type": "Organization",
+				  "name": "Hossein Pira"
+				}
+			  },
+			  "image": "https://viutak.online/social.jpg",
+			  "description": "ویوتاک - سورس کد حرفه‌ای برای WebView اندروید. خرید سورس کد با ادغام آسان، طراحی مدرن و کاملاً پاسخگو. آماده برای انتشار در گوگل پلی."
+			}
+		  </script>
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
-      rel="stylesheet"
-    />
+<!--Header Start-->
+<header>
+<div class="main">
+<div class="right rt-50px rt-center rt-pointer rt-27 rt-fff" id="menu-btn"><i class="fa fa-bars"></i></div>
+<a href="index.html"><img src="https://viutak.online/icon.png" height="48" class="logo logo-a right"><img src="https://viutak.online/icon.png" height="48" class="logo logo-b right"></a>
+<ul class="menu right rt-align rt-14">
+<li><a href="index.html" class="rt-bold rt-fff">صفحه اصلی</a></li>
+<li><a href="#screen" class="rt-bold rt-fff">تصاویر</a></li>
+<li><a href="faq.html" class="rt-bold rt-fff">سوالات متداول</a></li>
+</ul>
+<div class="log-reg rt-14 left">
+<a href="#screen" class="log left rt-bg rt-bold rt-35px rt-sorme"><i class="fab fa-android"></i> مشاهده دمو</a>
+<a href="https://www.rtl-theme.com" target="_blank" class="reg left rt-bold rt-35px rt-fff"><i class="fa fa-shopping-cart"></i> خرید از راستچین</a>
+</div>
+<a href="#screen" class="log-panel rt-fff rt-18 rt-center rt-50px left"><i class="fab fa-android"></i></a>
+</div>
+</header>
+<!--Header End-->
 
-    <!-- Vazirmatn Font -->
-    <link
-      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-
-    <!-- FontAwesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Structured Data JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Viutak",
-        "operatingSystem": "Android",
-        "applicationCategory": "WebView Source Code",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "IRR",
-          "price": "500000",
-          "url": "https://www.rtl-theme.com",
-          "seller": {
-            "@type": "Organization",
-            "name": "Hossein Pira"
-          }
-        },
-        "image": "https://viutak.online/social.jpg",
-        "description": "ویوتاک - سورس کد حرفه‌ای برای WebView اندروید. خرید سورس کد با ادغام آسان، طراحی مدرن و کاملاً پاسخگو. آماده برای انتشار در گوگل پلی."
-      }
-    </script>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header class="bg-dark text-light p-3">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h1 class="h3"><i class="fab fa-android"></i> ویوتاک</h1>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="bg-light text-center py-5">
-      <div class="container">
-        <h1 class="display-4 mb-4">
-          ویوتاک: اپلیکیشن ساز حرفه‌ای برای WebView اندروید
-        </h1>
-        <p class="lead mb-5">
-          <i class="fas fa-check-circle"></i> ادغام سریع، طراحی مدرن و کاملاً
-          پاسخگو. آماده برای انتشار در گوگل پلی.
-        </p>
-        <a href="#demo" class="btn btn-primary btn-lg me-2"
-          ><i class="fas fa-play-circle"></i> مشاهده دمو</a
-        >
-        <a href="#buy" class="btn btn-outline-primary btn-lg"
-          ><i class="fas fa-shopping-cart"></i> خرید ویوتاک</a
-        >
-      </div>
-    </section>
-
-    <!-- News Section -->
-<section id="news" class="news bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4"><i class="fas fa-newspaper"></i> اخبار و به‌روزرسانی‌ها</h2>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="news-box bg-white p-4 shadow-sm">
-          <h3 class="h5"><i class="fas fa-tablet-alt"></i> پشتیبانی از تبلت‌ها</h3>
-          <p class="mb-0">
-            نسخه جدید ویوتاک با پشتیبانی کامل از تبلت‌ها منتشر شد. تجربه کاربری بهتری در دستگاه‌های بزرگ‌تر.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="news-box bg-white p-4 shadow-sm">
-          <h3 class="h5"><i class="fas fa-microchip"></i> پشتیبانی از x86 و x86_64</h3>
-          <p class="mb-0">
-            اکنون ویوتاک از پردازنده‌های x86 و x86_64 نیز پشتیبانی می‌کند. توسعه دهندگان می‌توانند از این نسخه برای اپلیکیشن‌های خود استفاده کنند.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="news-box bg-white p-4 shadow-sm">
-          <h3 class="h5"><i class="fas fa-camera"></i> پشتیبانی از مجوز دوربین</h3>
-          <p class="mb-0">
-            ویوتاک اکنون از مجوز دسترسی به دوربین پشتیبانی می‌کند. کاربران می‌توانند از ویژگی‌های دوربین در برنامه‌های خود استفاده کنند.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--Index Top Start-->
+<section class="index-top rt-relative rt rt-color">
+<div class="main">
+<div class="rt rt-relative rt-z-index">
+<img src="images/banner.png" class="left picture">
+<article class="right">
+<h1 class="rt-800 rt rt-fff rt-33">ویوتاک: اپلیکیشن ساز حرفه‌ای برای WebView اندروید</h1>
+<p class="rt rt-17 rt-300"> با استفادهاز ویوتاک شما می توانید بدون نیاز به دانش فنی و بدون نیاز به سیستم قوی، فقط در ده دقیقه اپلیکیشن برای سایت خود بسازید. این سرویس محدودیت ندارد و شما می توانید برای بی نهایت سایت استفاد کنید. همچنین شما با استفاده از این سرویس علاوه بر خروجی apk، می توانید خروجی aab برای انتشار در گوگل پلی را خروجی دهید. همین الان شروع کنید و اپلیکیشن خود را تحویل بگیرید! </p>
+<a href="https://www.rtl-theme.com" class="right rt-35px rt-fff rt-bold rt-green-1 btnzxcas" target="_blank">همین حالا خرید کنید <i class="fa fa-angle-left"></i></a>
+</article>
+<img src="images/circle.png" class="rt-absolute an-1">
+<img src="images/plan.png" class="rt-absolute an-2">
+<img src="images/circle.png" class="rt-absolute an-3">
+</div>
+</div>
 </section>
+<!--Index Top End-->
 
-<!-- News Pop-up Modal -->
-<div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="newsModalLabel"><i class="fas fa-bullhorn"></i> اخبار جدید</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h6><i class="fas fa-tablet-alt"></i> پشتیبانی از تبلت‌ها</h6>
-        <p>نسخه جدید ویوتاک با پشتیبانی کامل از تبلت‌ها منتشر شد. تجربه کاربری بهتری در دستگاه‌های بزرگ‌تر.</p>
-        <hr>
-        <h6><i class="fas fa-microchip"></i> پشتیبانی از x86 و x86_64</h6>
-        <p>اکنون ویوتاک از پردازنده‌های x86 و x86_64 نیز پشتیبانی می‌کند. توسعه دهندگان می‌توانند از این نسخه برای اپلیکیشن‌های خود استفاده کنند.</p>
-        <hr>
-        <h6><i class="fas fa-camera"></i> پشتیبانی از مجوز دوربین</h6>
-        <p>ویوتاک اکنون از مجوز دسترسی به دوربین پشتیبانی می‌کند. کاربران می‌توانند از ویژگی‌های دوربین در برنامه‌های خود استفاده کنند.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-      </div>
-    </div>
-  </div>
+<!--Amar Start-->
+<aside class="amar rt">
+<div class="main">
+<div class="entery rt-relative rt-z-index rt-align rt rt-30px rt-bg">
+<div class="side right">
+<span class="num rt rt-30 rt-bold rt-rang">خروجی رایگان</span>
+<span class="text rt-14 rt-444">خروجی رایگان برای اولین پروژه شما</span>
+</div>
+<div class="side right">
+<span class="num rt rt-30 rt-bold rt-rang">نصب آسان</span>
+<span class="text rt-14 rt-444">با آموزش فارسی ما به راحتی خروجی پروژه خود را دریافت کنید. بدون نیاز به دانش قبلی و بدون نیاز به Android Studio</span>
+</div>
+<div class="side right">
+<span class="num rt rt-30 rt-bold rt-rang">بدون لایسنس</span>
+<span class="text rt-14 rt-444">به تعداد نامحدود و برای بی نهایت وبسایت برنامه تولید کنید.</span>
+</div>
+<div class="side right">
+<span class="num rt rt-30 rt-bold rt-rang">سفارش سازی</span>
+<span class="text rt-14 rt-444">تمام بخش های پروژه قابل سفارش سازی است و همچنین در صورت نیاز ما آن را برای شما انجام می دهیم.</span>
+</div>
+</div>
+</div>
+</aside>
+<!--Amar End-->
+
+<!--Feature Start-->
+<section class="rt feature">
+<div class="main">
+<img src="images/pic-4.png" class="right side pic">
+<div class="side left fey">
+<h3 class="rt rt-33 rt-800 rt-sorme">برتری های <span class="rt-rang rt-800">ویوتاک</span></h3>
+<ul class="rt rt-333 rt-16">
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">سازگاری با تمام سایت ها</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">پایین ترین قیمت در بین کالاهای مشابه</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">سرعت اجرای بسیار بالا</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">سازگاری با تمامی پردازنده‌ها و نسخه‌های اندروید</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">پشتیبانی از سیستم اعلان‌ها و امکان ارسال اعلان‌های نامحدود با فایربیس گوگل</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">سیستم کش قدرتمند برای ذخیره داده‌ها</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">پشتیبانی از موقعیت‌مکانی دقیق</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">مشخص کردن دامنه و لینک‌های داخلی</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">باز کردن لینک‌های خارجی در مرورگر خارجی</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">پشتیبانی از مجوز دوربین</span></li>
+<li class="rt"><i class="fa fa-circle rt-rang right"></i> <span class="right">پشتیبانی از تبلت‌ها</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!--Feature End-->
+
+<!--Steps Start-->
+<section class="rt feature steps">
+<div class="main">
+<img src="https://viutak.online/icon.png" class="left side vxcxx">
+<div class="side asx right">
+<ul class="rt">
+<div class="rt">
+<i class="fa fa-arrow-down right"></i>
+<li class="left rt-35px rt-bg">
+<div class="entery">
+<h3 class="rt rt-bold rt-222 rt-19"><span class="rt-center rt-50px rt-14 rt-fff num-1">1</span> خرید ویوتاک از راستچین</h3>
+<p class="rt rt-666 rt-15">ویوتاک را از سایت راستچین خرید کرده و فایل محصول را دانلود کنید.</p>
+</div>
+</li>
+</div>
+<div class="rt">
+<i class="fa fa-arrow-down left"></i>
+<li class="right rt-35px rt-bg">
+<div class="entery">
+<h3 class="rt rt-bold rt-222 rt-19"><span class="rt-center rt-50px rt-14 rt-fff num-2">2</span> توسعه پروژه</h3>
+<p class="rt rt-666 rt-15">به کمک آموزشات ویدیویی، پروژه را سفارش سازی کنید و آن را خروجی دهید.</p>
+</div>
+</li>
+</div>
+<div class="rt">
+<i class="fa fa-arrow-left right"></i>
+<li class="left rt-35px rt-bg">
+<div class="entery">
+<h3 class="rt rt-bold rt-222 rt-19"><span class="rt-center rt-50px rt-14 rt-fff num-3">3</span> انتشار برنامه</h3>
+<p class="rt rt-666 rt-15">برنامه خود را در گوگل پلی یا استور های ایرانی منتشر کنید.</p>
+</div>
+</li>
+</div>
+</ul>
+</div>
+</div>
+</section>
+<!--Steps End-->
+
+<!--Templates Start-->
+<section id="screen" class="templates-demo rt-overflow rt-relative rt-z-index rt">
+<div class="main">
+<div class="side left rt-relative rt-z-index">
+<div class="dots rt" id="dots-products"></div>
+<h3 class="rt rt-33 rt-800 rt-sorme">تصاویر <span class="rt-rang rt-800">و</span> دانلود برنامه</h3>
+<p class="rt rt-333">پیش نمایش برای تمام معماری ها موجود است. دکمه سبز رنگ برای تمامی معماری ها و تمامی دستگاه ها مناسب است.<li>1 - دکمه سبز رنگ: برای تمامی دستگاه‌ها (موبایل، تبلت، تبلت‌های جدید شیائومی، دستگاه‌های مجازی)</li><li>2 - برای دستگاه‌های موبایل و تبلت با معماری arm64-v8a</li><li>3 - برای دستگاه‌های موبایل و تبلت با معماری armeabi-v7a</li><li>4 - برای تبلت‌های جدید شیائومی با معماری x86</li><li>5 - برای دستگاه‌های مجازی با معماری x86_64</li></p>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-release.apk" class="right rt-35px rt-fff rt-bold rt-green-1 btnzxcas" target="_blank">دانلود برای تمام پردازنده ها <i class="fab fa-android"></i></a>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-arm64-v8a.apk" class="right rt-35px rt-bg rt-sorme rt-bold btnzxcas2" target="_blank"><i class="fab fa-android"></i> دانلود برای معماری arm64-v8a</a>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-armeabi-v7a.apk" class="right rt-35px rt-bg rt-sorme rt-bold btnzxcas2" target="_blank"><i class="fab fa-android"></i> دانلود برای معماری armeabi-v7a</a>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-x86.apk" class="right rt-35px rt-bg rt-sorme rt-bold btnzxcas2" target="_blank"><i class="fab fa-android"></i> دانلود برای معماری x86</a>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-x86_64.apk" class="right rt-35px rt-bg rt-sorme rt-bold btnzxcas2" target="_blank"><i class="fab fa-android"></i> دانلود برای معماری x86_64</a>
+</div>
+<div class="right rt-relative owl-carousel owl-theme owl-product">
+<div class="item rt rt-relative"><img src="5895367046902956787.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">ارسال اعلان</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen1.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">صفحه اسپلش اسکرین</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen3.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">درخواست مجوز اجباری</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen4.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">لغو مجوز اجباری</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen5.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">صفحه فعال سازی مجوز های اجباری</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen6.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">لودینگ برنامه</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen7.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">صفحه آفلاین و خطای اینترنت</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen8.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">امکتن نمایش فول اسکرین</h2></div></div>
+<div class="item rt rt-relative"><img src="https://viutak.online/images/screen9.jpg" class="rt"><div class="des rt-bg rt"><h2 class="rt rt-limit rt-16 rt-align rt-medium rt-222">پشتیبانی از Deep Link</h2></div></div>
+</div>
+</div>
+</section>
+<!--Templates End-->
+
+<!--Wejegeez Start-->
+<section class="wejegeez rt-relative rt-z-index rt">
+<div class="main">
+<div class="title rt rt-align">
+<h3 class="rt rt-33 rt-800 rt-sorme">سازگار با <span class="rt-rang rt-800">تمام</span> سایت ها</h3>
+<p class="rt rt-333">فرقی ندارد که سایت شما با چه زبان یا فریمورکی ساخته شده باشد، ویوتاک از همه سایت ها و فریمورک ها پشتیبانی می کند. بدون نیاز به نصب افزونه در وردپرس و بدون نیاز به تغییر کد سایت شما.</p>
+</div>
+<div class="rt entery">
+
+<div class="sotoon right">
+<div class="item rt rt-bg rt-align rt-10px item-1">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-html5"></i></div>
+<span class="rt rt-bold rt-16">HTML </span>
+</div>
+<div class="item rt rt-bg rt-align rt-10px item-2">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-wordpress"></i></div>
+<span class="rt rt-bold rt-16">WordPress </span>
+</div>
 </div>
 
-<!-- Trigger Modal on Page Load -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var newsModal = new bootstrap.Modal(document.getElementById('newsModal'));
-    newsModal.show();
-  });
+<div class="sotoon right">
+<div class="item rt rt-bg rt-align rt-10px item-3">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-php"></i></div>
+<span class="rt rt-bold rt-16">PHP</span>
+</div>
+<div class="item rt rt-bg rt-align rt-10px item-4">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-java"></i></div>
+<span class="rt rt-bold rt-16">Spring Boot </span>
+</div>
+</div>
+
+<div class="sotoon right">
+<div class="item rt rt-bg rt-align rt-10px item-5">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-python"></i></div>
+<span class="rt rt-bold rt-16">Django </span>
+</div>
+<div class="item rt rt-bg rt-align rt-10px item-6">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-laravel"></i></div>
+<span class="rt rt-bold rt-16">Laravel </span>
+</div>
+</div>
+
+<div class="sotoon right">
+<div class="item rt rt-bg rt-align rt-10px item-7">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-react"></i></div>
+<span class="rt rt-bold rt-16">React </span>
+</div>
+<div class="item rt rt-bg rt-align rt-10px item-8">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-vuejs"></i></div>
+<span class="rt rt-bold rt-16">Vue.js </span>
+</div>
+</div>
+
+<div class="sotoon right">
+<div class="item rt rt-bg rt-align rt-10px item-9">
+<div class="icon rt-center rt-50px rt-fff"><i class="fab fa-node-js"></i></div>
+<span class="rt rt-bold rt-16">Node.js </span>
+</div>
+<div class="item rt rt-bg rt-align rt-10px item-10">
+<div class="icon rt-center rt-50px rt-fff"><i class="fas fa-question-circle"></i></div>
+<span class="rt rt-bold rt-16">فریم‌ورک شما </span>
+</div>
+</div>
+
+<div class="saths-btn rt rt-align"><a href="saths.html" class="rt-35px rt-bg rt-14 rt-sorme rt-bold btnzxcas2" target="_blank"><i class="fa fa-star" style="color:#f0b701"></i> مشاهده سطح های همکاری</a></div>
+</div>
+</div>
+</section>
+<!--Wejegeez End-->
+
+<!--Saths Start-->
+<section class="saths rt-relative rt-overflow rt">
+<div class="main">
+<div class="title rt rt-align">
+<h3 class="rt rt-33 rt-800 rt-sorme">مقایسه <span class="rt-rang rt-800">ویوتاک</span> با سایر پروژه ها</h3>
+</div>
+<div class="scroll rt">
+<table class="rt rt-15 rt-444 rt-align">
+<tr style="background-color:#fff">
+<th class="rt-sorme rt-bold rt-18" style="width:280px">ویژگی و امکانات</th>
+<th class="rt-bold rt-27" style="color:#ed9d5d">سایر پروژه ها</th>
+<th class="rt-bold rt-27" style="color:#96a0ab">ویوتاک</th>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">سازگاری با سایت ها</td>
+<td>60%</td>
+<td>100%</td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">تعداد خروجی</td>
+<td>یک تا سه عدد</td>
+<td>نامحدود</td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">خروجی فایل apk</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">خروجی فایل aab (مناسب برای گوگل پلی)</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">لایسنس</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-close"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">دسترسی به میکروفون</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">دسترسی به مکان</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+	<td class="rt-medium rt-sorme">دسترسی به دوربین</td>
+	<td><i class="fa fa-close"></i></td>
+	<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">قابلیت ارسال اعلان</td>
+<td><i class="fa fa-check"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">هزینه ارسال اعلان</td>
+<td>تعداد رایگان محدود و هزینه زیاد</td>
+<td>کاملا رایگان و نامحدود</td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">یوزر ایجنت قابل سفارشی‌سازی</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">سازگاری با بازی‌های HTML5</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">خروجی بدون نیاز به نصب Android SDK، Android Studio و JDK</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">جاوا اسکریپت قابل سفارشی‌سازی</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">CSS قابل سفارشی‌سازی</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td class="rt-medium rt-sorme">مشخص کردن دامنه و لینک‌های داخلی</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+
+<tr>
+<td class="rt-medium rt-sorme">پشتیبانی از Deep Link برای باز کردن لینک‌ها در مرورگر داخلی</td>
+<td><i class="fa fa-close"></i></td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+
+<tr>
+	<td class="rt-medium rt-sorme">قابلیت تنظیم مجوزهای اجباری به دلخواه</td>
+	<td><i class="fa fa-close"></i></td>
+	<td><i class="fa fa-check"></i></td>
+	</tr>
+
+	<tr>
+		<td class="rt-medium rt-sorme">شناسایی خودکار لینک‌های http، https و www برای تنظیم لینک‌های داخلی و Deep Link</td>
+		<td><i class="fa fa-close"></i></td>
+		<td><i class="fa fa-check"></i></td>
+		</tr>
+
+		<tr>
+			<td class="rt-medium rt-sorme">آموزش خروجی بدون پیش نیاز</td>
+			<td><i class="fa fa-close"></i></td>
+			<td><i class="fa fa-check"></i></td>
+			</tr>
+</table>
+</div>
+</div>
+</section>
+<!--Saths End-->
+
+<!--Footer Start-->
+<footer>
+<div class="main rt-fff">
+
+<div class="footer-widget w-1 right">
+<a href="index.html"><img src="https://viutak.online/icon.png" height="40" class="logo-f right"></a>
+<div class="social rt">
+<span class="right rt-13 rt-fff">قدرتمند ترین اپلیکیشن ساز ایرانی</span>
+</div>
+</div>
+
+<div class="footer-widget w-3 right">
+<h3 class="title rt rt-bold rt-15">دانلود اپلیکیشن آزمایشی</h3>
+<span class="rt sxs rt-13">برای تمامی دستگاه‌ها (موبایل، تبلت، تبلت‌های جدید شیائومی، دستگاه‌های مجازی) </span>
+<a href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-release.apk" class="right rt-5px rt-fff">
+<div class="des right rt-13">
+<span class="rt">دانلود مستقیم</span>
+<span class="rt rt-12">نسخه مناسب تمام پردازنده ها</span>
+</div>
+<i class="fab fa-android left"></i>
+</a>
+</div>
+
+</div>
+<div class="copyright rt rt-15 rt-align">
+<div class="main">کلیه حقوق این سایت متعلق به نتیو سیتی است.</div>
+</div>
+</footer>
+<!--Footer End-->
+
+<!--Nav Mobile Start-->
+<nav class="mob-menu right" id="menu-mob">
+<div class="main rt-15">
+<div class="logo-mob rt rt-align"><a href="index.html"><img src="https://viutak.online/icon.png" height="46"></a></div>
+<ul class="rt" id="accordion">
+<li class="rt"><a href="index.html" class="rt-14 rt-fff rt rt-medium">صفحه نخست</a></li>
+<li class="rt"><a href="#screen" class="rt-14 rt-fff rt rt-medium">دانلود دمو</a></li>
+<li class="rt"><a href="faq.html" class="rt-14 rt-fff rt rt-medium">سوالات متداول</a></li>
+</ul>
+<p class="copyright rt-fff rt-13 rt rt-align">توسعه داده شده توسط تیم نتیو سیتی</p>
+</div>
+</nav>
+<div class="rt" id="close-menu-bg"></div>
+<!--Nav Mobile End-->
+
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/java.js"></script>
+<script type="text/javascript">
+$(window).scroll(function() { if ($(this).scrollTop() > 20) { $('header').addClass('fixed'); } else { $('header').removeClass('fixed'); } });
+$('.owl-product').owlCarousel({
+	autoplay:true,
+	autoplayTimeout:3000,
+	lazyLoad:true,
+	loop:true,
+dots:true,
+dotsContainer:'#dots-products',
+nav:false,
+rtl:true,
+responsive:{
+0:{
+items:1
+},
+550:{
+items:2
+},
+1000:{
+items:3
+}
+}
+})
 </script>
+</body>
 
-
-    <!-- Features Section -->
-    <section class="features py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">
-          <i class="fas fa-star"></i> ویژگی‌های برجسته ویوتاک
-        </h2>
-        <div class="row text-center">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-sync-alt"></i> سازگاری با تمام سایت ها
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-tachometer-alt"></i> سرعت اجرای بسیار بالا
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-microchip"></i> سازگاری با تمامی پردازنده‌ها و
-                نسخه‌های اندروید
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-bell"></i> پشتیبانی از سیستم اعلان‌ها
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-file-download"></i> دسترسی به فایل‌ها (دانلود و
-                آپلود)
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-volume-up"></i> پشتیبانی از پخش صدا
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-map-marker-alt"></i> پشتیبانی از موقعیت‌مکانی
-                دقیق
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-gamepad"></i> سازگاری با بازی‌های HTML5
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-video"></i> پشتیبانی از پخش ویدیوهای آنلاین
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-code"></i> کدنویسی تمیز و بهینه
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-cogs"></i> خروجی بدون نیاز به نصب Android SDK،
-                Android Studio و JDK
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fab fa-js-square"></i> جاوا اسکریپت قابل سفارشی‌سازی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fab fa-css3-alt"></i> استایل CSS قابل سفارشی‌سازی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-link"></i> مشخص کردن دامنه و لینک‌های داخلی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-drafting-compass"></i> تشخیص خودکار لینک‌های
-                داخلی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-code-branch"></i> پشتیبانی از Deep Link برای
-                باز کردن لینک‌ها در مرورگر داخلی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-external-link-alt"></i> باز کردن لینک‌های خارجی
-                در مرورگر خارجی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-play"></i> اسپلش اسکرین قابل تنظیم
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-spinner"></i> افکت‌های لودینگ زیبا و کاربرپسند
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-user-secret"></i> یوزر ایجنت قابل سفارشی‌سازی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-cloud"></i> صفحه آفلاین کاملاً کاربردی
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-shield-alt"></i> صفحه تنظیمات مجوزهای اجباری
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-lock"></i> قابلیت تنظیم مجوزهای اجباری به
-                دلخواه
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-envelope"></i> پشتیبانی از لینک‌های ایمیل و
-                شماره تلفن
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-link"></i> شناسایی خودکار لینک‌های http، https
-                و www برای تنظیم لینک‌های داخلی و Deep Link
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-bell"></i> امکان ارسال اعلان‌های نامحدود با
-                فایربیس گوگل
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-key"></i> قابلیت استفاده از اطلاعات ورود
-                ذخیره‌شده در دستگاه یا گوگل
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="feature-box bg-white p-4 shadow-sm">
-              <h3 class="h5">
-                <i class="fas fa-database"></i> سیستم کش قدرتمند برای ذخیره
-                داده‌ها
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!-- Demo Section -->
-<section id="demo" class="demo bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4"><i class="fas fa-mobile-alt"></i> دانلود برنامه</h2>
-    <img src="icon.png" alt="Demo Image" class="img-fluid mb-4" width="130" />
-    
-    <!-- Universal APK Download -->
-    <a
-      href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-release.apk"
-      class="btn btn-primary btn-lg mb-2"
-      download
-      ><i class="fas fa-download"></i> دانلود دمو (Universal APK)</a
-    >
-    <p class="text-muted">برای تمامی دستگاه‌ها (موبایل، تبلت، تبلت‌های جدید شیائومی، دستگاه‌های مجازی)</p>
-    
-    <!-- Separate Architecture Downloads -->
-    <div class="mt-4">
-      <h5>دانلود نسخه‌های مخصوص معماری‌ها:</h5>
-      
-      <!-- arm64-v8a APK -->
-      <a
-        href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-arm64-v8a.apk"
-        class="btn btn-outline-primary btn-sm mb-2"
-        download
-        ><i class="fas fa-download"></i> arm64-v8a</a
-      >
-      <p class="text-muted">برای دستگاه‌های موبایل و تبلت با معماری arm64-v8a</p>
-
-      <!-- armeabi-v7a APK -->
-      <a
-        href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-armeabi-v7a.apk"
-        class="btn btn-outline-primary btn-sm mb-2"
-        download
-        ><i class="fas fa-download"></i> armeabi-v7a</a
-      >
-      <p class="text-muted">برای دستگاه‌های موبایل و تبلت با معماری armeabi-v7a</p>
-
-      <!-- x86 APK -->
-      <a
-        href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-x86.apk"
-        class="btn btn-outline-primary btn-sm mb-2"
-        download
-        ><i class="fas fa-download"></i> x86</a
-      >
-      <p class="text-muted">برای تبلت‌های جدید شیائومی با معماری x86</p>
-
-      <!-- x86_64 APK -->
-      <a
-        href="https://github.com/viutak/viutak.github.io/releases/download/1.0.0/app-x86_64.apk"
-        class="btn btn-outline-primary btn-sm mb-2"
-        download
-        ><i class="fas fa-download"></i> x86_64</a
-      >
-      <p class="text-muted">برای دستگاه‌های مجازی با معماری x86_64</p>
-    </div>
-  </div>
-</section>
-
-<!-- Demo Section 2 -->
-<section id="demo2" class="demo bg-light py-5">
-  <div class="container text-center">
-    <h2 class="mb-4">
-      <i class="fas fa-mobile-alt"></i> تست آنلاین (با انواع دستگاه موبایل و
-      تبلت در حالت افقی و عمودی). نکته: این صفحه به vpn نیاز دارد.
-    </h2>
-    <img
-      src="appetize-dark.svg"
-      alt="Demo Image"
-      class="img-fluid mb-4"
-      width="130"
-    />
-    <a
-      href="https://appetize.io/app/b_gz6olbd6tmiafle6rtt7275mqa"
-      class="btn btn-primary btn-lg"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><i class="fas fa-play-circle"></i> مشاهده دمو آنلاین</a
-    >
-  </div>
-</section>
-
-
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots py-5">
-      <div class="container text-center">
-        <h2 class="mb-4"><i class="fas fa-images"></i> تصاویر پروژه</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen1.jpg"
-                alt="Screenshot 1"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0">
-                  <i class="fas fa-play"></i> صفحه اسپلش اسکرین
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen2.jpg"
-                alt="Screenshot 2"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0"><i class="fas fa-home"></i> صفحه اصلی برنامه</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen3.jpg"
-                alt="Screenshot 3"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0">
-                  <i class="fas fa-shield-alt"></i> صفحه درخواست مجوز اجباری
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen4.jpg"
-                alt="Screenshot 4"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0"><i class="fas fa-ban"></i> لغو مجوز اجباری</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen5.jpg"
-                alt="Screenshot 5"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0">
-                  <i class="fas fa-tools"></i> صفحه تنظیمات مجوزهای اجباری
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen6.jpg"
-                alt="Screenshot 6"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0"><i class="fas fa-spinner"></i> صفحه لودینگ</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen7.jpg"
-                alt="Screenshot 7"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0"><i class="fas fa-wifi"></i> صفحه آفلاین</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen8.jpg"
-                alt="Screenshot 8"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0">
-                  <i class="fas fa-expand"></i> قابلیت نمایش تمام صفحه
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="screenshot-box position-relative">
-              <img
-                src="images/screen9.jpg"
-                alt="Screenshot 9"
-                class="img-fluid shadow-sm"
-                width="250"
-                loading="lazy"
-              />
-              <div
-                class="screenshot-info position-absolute bottom-0 start-0 p-3 bg-dark text-light w-100 opacity-75"
-              >
-                <p class="mb-0">
-                  <i class="fas fa-link"></i> پشتیبانی از Deep Link
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Buy Section -->
-    <section id="buy" class="buy bg-light py-5">
-      <div class="container text-center">
-        <h2 class="mb-4"><i class="fas fa-shopping-cart"></i> خرید ویوتاک</h2>
-        <p class="lead mb-4">
-          <i class="fas fa-lightbulb"></i> هم‌اکنون سورس کد ویوتاک را خریداری
-          کنید و اپلیکیشن خود را سریعاً بسازید!
-        </p>
-        <a href="https://www.rtl-theme.com" class="btn btn-primary btn-lg"
-          ><i class="fas fa-shopping-cart"></i> خرید از راستچین</a
-        >
-      </div>
-    </section>
-
-    <!-- Supported Frameworks Section -->
-    <section id="frameworks" class="frameworks bg-light py-5">
-      <div class="container text-center">
-        <h2 class="mb-3">
-          <i class="fas fa-layer-group"></i> سایت های پشتیبانی‌شده
-        </h2>
-        <p class="mb-4">ویوتاک از همه سایت ها و فریمورک ها پشتیبانی می کند.</p>
-        <div class="row text-center">
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-html5 fa-3x mb-3 text-primary"></i>
-              <h5>HTML</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-wordpress fa-3x mb-3 text-primary"></i>
-              <h5>WordPress</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-python fa-3x mb-3 text-primary"></i>
-              <h5>Django</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-node-js fa-3x mb-3 text-primary"></i>
-              <h5>Node.js</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-laravel fa-3x mb-3 text-primary"></i>
-              <h5>Laravel</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-php fa-3x mb-3 text-primary"></i>
-              <h5>PHP</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-react fa-3x mb-3 text-primary"></i>
-              <h5>React</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-vuejs fa-3x mb-3 text-primary"></i>
-              <h5>Vue.js</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-js-square fa-3x mb-3 text-primary"></i>
-              <h5>Nuxt.js</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-js-square fa-3x mb-3 text-primary"></i>
-              <h5>Next.js</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-windows fa-3x mb-3 text-primary"></i>
-              <h5>ASP.NET</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-angular fa-3x mb-3 text-primary"></i>
-              <h5>Angular</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-bootstrap fa-3x mb-3 text-primary"></i>
-              <h5>Bootstrap</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-sass fa-3x mb-3 text-primary"></i>
-              <h5>Sass</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-python fa-3x mb-3 text-primary"></i>
-              <h5>Flask</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fab fa-java fa-3x mb-3 text-primary"></i>
-              <h5>Spring Boot</h5>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 mb-4">
-            <div class="framework-box p-4 shadow-sm">
-              <i class="fas fa-question-circle fa-3x mb-3 text-primary"></i>
-              <h5>فریم‌ورک شما</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer bg-dark text-light py-4">
-      <div class="container text-center">
-        <p>© 2024 ویوتاک - تمامی حقوق محفوظ است.</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  </body>
 </html>
