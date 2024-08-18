@@ -1,0 +1,701 @@
+<!DOCTYPE html><html lang="en" class="h-full scroll-smooth" dir="rtl"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>مستندات phpShort</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta name="description" content="آموزش نصب و راه اندازی اسکریپت phpShort">
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer=""></script>
+
+    <!-- Styles -->
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet preconnect">
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="antialiased flex flex-col min-h-full text-neutral-700 dark:text-neutral-300 bg-white dark:bg-black selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black">
+<div class="flex flex-col flex-auto">
+    <div class="max-w-screen-lg w-full px-4 py-16 flex-auto mx-auto">
+        <h1 class="text-3xl sm:text-4xl	mb-12 font-bold text-neutral-900 dark:text-neutral-50">مستندات</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-24 md:gap-8">
+            <div class="col-span-1 md:col-span-3" id="documentation-menu">
+                <nav class="sticky top-24 flex basis-full items-center">
+                    <ul class="flex flex-col space-y-8">
+            
+                        <li class="space-y-3">
+                            <a href="#getting-started" class="font-medium transition text-neutral-900 dark:text-neutral-50  hover:text-violet-500 hover:dark:text-violet-400 " data-active="text-violet-500 dark:text-violet-400">شروع به کار</a>
+            
+                            <ul class="space-y-3 text-sm">
+                                <li class="space-y-3">
+                                    <a href="#introduction" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">مقدمه</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#requirements" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">نیازمندی‌ها</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="space-y-3">
+                            <a href="#installation" class="font-medium transition text-neutral-900 dark:text-neutral-50  hover:text-violet-500 hover:dark:text-violet-400 " data-active="text-violet-500 dark:text-violet-400">نصب</a>
+            
+                            <ul class="space-y-3 text-sm">
+                                <li class="space-y-3">
+                                    <a href="#creating-the-database" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">ایجاد پایگاه داده</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#uploading-the-files" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">آپلود فایل‌ها</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#configuring-the-files" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">پیکربندی فایل‌ها</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#changing-the-public-directory" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">تغییر دایرکتوری عمومی</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#finishing-the-installation" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">پایان نصب</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="space-y-3">
+                            <a href="#configuration" class="font-medium transition text-neutral-900 dark:text-neutral-50  hover:text-violet-500 hover:dark:text-violet-400 " data-active="text-violet-500 dark:text-violet-400">پیکربندی</a>
+            
+                            <ul class="space-y-3 text-sm">
+                                <li class="space-y-3">
+                                    <a href="#cron-job" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">کران جاب</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#email" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">ایمیل</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#authentication" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">احراز هویت</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#captcha" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">کپچا</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#payment-processors" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">پردازشگرهای پرداخت</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#advanced" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">پیشرفته</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="space-y-3">
+                            <a href="#update" class="font-medium transition text-neutral-900 dark:text-neutral-50  hover:text-violet-500 hover:dark:text-violet-400 " data-active="text-violet-500 dark:text-violet-400">بروزرسانی</a>
+            
+                            <ul class="space-y-3 text-sm">
+                                <li class="space-y-3">
+                                    <a href="#backing-up" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">پشتیبان گیری</a>
+                                </li>
+                                <li class="space-y-3">
+                                    <a href="#updating" class="transition text-neutral-500 dark:text-neutral-400 hover:text-violet-500 hover:dark:text-violet-400" data-active="text-violet-500 dark:text-violet-400">بروزرسانی</a>
+                                </li>
+                            </ul>
+                        </li>
+            
+                        <li class="space-y-3">
+                            <a href="#faq" class="font-medium transition text-neutral-900 dark:text-neutral-50  hover:text-violet-500 hover:dark:text-violet-400 " data-active="text-violet-500 dark:text-violet-400">پرسش‌های متداول</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>            
+
+            <div class="col-span-1 md:col-span-9" id="documentation-content">
+                <div dir="rtl">
+                    <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="getting-started">شروع به کار</h2>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="introduction">مقدمه</h3>
+                
+                        <p class="mb-4">این صفحه مراحل نصب و پیکربندی نرم‌افزار <a href="https://www.rtl-theme.com/author/candyteam" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">phpShort</a> را توضیح می‌دهد.</p>
+                    </div>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="requirements">نیازمندی‌ها</h3>
+                
+                        <p class="mb-4">قبل از نصب نرم‌افزار، لطفاً مطمئن شوید که سرور شما نیازمندی‌های زیر را داراست.</p>
+                
+                        <div class="text-right text-sm rounded overflow-hidden border border-neutral-900/5 dark:border-neutral-100/10">
+                            <table class="w-full">
+                                <thead class="bg-neutral-100 dark:bg-neutral-900">
+                                <tr>
+                                    <th class="px-4 py-3 font-semibold">نرم‌افزار</th>
+                                    <th class="px-4 py-3 font-semibold">ماژول‌ها</th>
+                                </tr>
+                                </thead>
+                
+                                <tbody class="divide-y divide-neutral-900/5 dark:divide-neutral-100/10">
+                                <tr>
+                                    <td class="px-4 py-3">PHP 8.1.x</td>
+                                    <td class="px-4 py-3">BCMath, Ctype, Fileinfo, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, GD, cURL</td>
+                                </tr>
+                
+                                <tr>
+                                    <td class="px-4 py-3">Apache 2+</td>
+                                    <td class="px-4 py-3">mod_rewrite</td>
+                                </tr>
+                
+                                <tr>
+                                    <td class="px-4 py-3">MySQL 5.7.7+ <br>MariaDB 10.3.17+</td>
+                                    <td class="px-4 py-3"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>                
+
+                <hr class="border-neutral-900/5 dark:border-neutral-100/10 my-12">
+
+                <div dir="rtl">
+                    <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="installation">نصب</h2>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="creating-the-database">ایجاد پایگاه داده</h3>
+                
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li class="mb-1">یک پایگاه داده MySQL جدید ایجاد کنید.</li>
+                
+                            <li class="mb-1">یک نام کاربری و رمز عبور MySQL جدید ایجاد کنید.</li>
+                
+                            <li class="mb-1">دسترسی کامل به نام کاربری پایگاه داده خود اختصاص دهید.</li>
+                        </ol>
+                
+                        <div class="text-sm">
+                            <div class="text-neutral-500 dark:text-neutral-400">منابع مفید</div>
+                            <div><a href="https://docs.cpanel.net/cpanel/databases/mysql-database-wizard/" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">cPanel - ویزارد پایگاه داده MySQL</a></div>
+                            <div><a href="https://docs.plesk.com/en-US/obsidian/customer-guide/website-databases.69535/" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">Plesk - پایگاه‌های داده وب‌سایت</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="uploading-the-files">آپلود فایل‌ها</h3>
+                
+                        <p class="bg-blue-300/20 dark:bg-blue-600/20 text-blue-800 dark:text-blue-200 rounded px-4 py-3 mb-4">قبل از شروع به آپلود فایل‌ها، لطفاً مطمئن شوید که گزینه نمایش فایل‌های مخفی در کاوشگر فایل شما فعال است. در برخی سیستم‌عامل‌ها، فایل‌های دات به طور پیش‌فرض مخفی هستند.</p>
+                
+                        <p class="mb-4">محتویات پوشه <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Software</code> را در پوشه وب ریشه دامنه خود آپلود کنید. این پوشه عموماً با نام <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">public_html</code>، <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">html</code> یا <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">example.com</code> شناخته می‌شود، اما بسته به تنظیمات سرور شما ممکن است نام دیگری داشته باشد.</p>
+                
+                        <div class="text-sm">
+                            <div class="text-neutral-500 dark:text-neutral-400">منابع مفید</div>
+                            <div><a href="https://docs.cpanel.net/cpanel/files/file-manager/#overview" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">cPanel - مدیریت فایل</a></div>
+                            <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/uploading-content-with-file-manager.74105/" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">Plesk - آپلود محتوا با مدیریت فایل</a></div>
+                        </div>
+                    </div>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="configuring-the-files">پیکربندی فایل‌ها</h3>
+                
+                        <p class="mb-4">دسترسی فایل‌ها (<span class="font-medium">CHMOD</span>) را برای فایل‌ها و پوشه‌های زیر به <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">775</code> تنظیم کنید:</p>
+                
+                        <ul class="mb-4">
+                            <li class="mb-1">فایل‌ها
+                                <ul class="list-disc mb-4 pl-6">
+                                    <li class="mb-1">.env</li>
+                                </ul>
+                            </li>
+                
+                            <li class="mb-1">پوشه‌ها
+                                <ul style="text-align: left;" dir="ltr" class="list-disc mb-4 pl-6">
+                                    <li class="mb-1">bootstrap/cache</li>
+                                    <li class="mb-1">lang</li>
+                                    <li class="mb-1">public/uploads/brand</li>
+                                    <li class="mb-1">storage</li>
+                                    <li class="mb-1">storage/framework/</li>
+                                    <li class="mb-1">storage/framework/cache</li>
+                                    <li class="mb-1">storage/framework/cache/data</li>
+                                    <li class="mb-1">storage/framework/sessions</li>
+                                    <li class="mb-1">storage/framework/views</li>
+                                    <li class="mb-1">storage/logs</li>
+                                </ul>
+                            </li>
+                        </ul>
+                
+                        <div class="text-sm">
+                            <div class="text-neutral-500 dark:text-neutral-400">منابع مفید</div>
+                            <div><a href="https://docs.cpanel.net/cpanel/files/file-manager/#update-file-or-folder-permissions" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">cPanel - به‌روزرسانی مجوز فایل یا پوشه</a></div>
+                            <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/setting-file-and-directory-access-permissions.70738/" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">Plesk - تنظیم مجوز دسترسی فایل و پوشه</a></div>
+                            <div></div>
+                        </div>
+                    </div>
+                
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="finishing-the-installation">پایان نصب</h3>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li class="mb-1">به <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">https://example.com/install</code> بروید و ویزارد نصب را دنبال کنید تا نصب کامل شود.</li>
+                
+                            <li class="mb-1">پس از نصب نرم‌افزار، وارد حساب کاربری خود شوید.</li>
+                        </ol>
+                    </div>
+                </div>                
+
+                <hr class="border-neutral-900/5 dark:border-neutral-100/10 my-12">
+
+                <div>
+                    <div dir="rtl">
+                        <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="configuration">پیکربندی</h2>
+                    
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="cron-job">کرون جاب</h3>
+                    
+                            <p class="mb-4">این نرم‌افزار نیاز به تنظیم یک وظیفه کرون جاب بر روی سرور شما دارد تا برخی از عملکردهای خود را به‌صورت خودکار انجام دهد.</p>
+                    
+                            <ol class="list-decimal pl-6 mb-4">
+                                <li class="mb-1">به <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کرون جاب</span> بروید.</li>
+                    
+                                <li class="mb-1">فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Command</code> را کپی کرده و یک کرون جاب تنظیم کنید که هر دقیقه اجرا شود.</li>
+                            </ol>
+                    
+                            <div class="text-sm">
+                                <div class="text-neutral-500 dark:text-neutral-400">منابع مفید</div>
+                                <div><a href="https://docs.cpanel.net/cpanel/advanced/cron-jobs/#add-a-cron-job" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">cPanel - کرون جاب</a></div>
+                                <div><a href="https://docs.plesk.com/en-US/obsidian/administrator-guide/server-administration/scheduling-tasks.64993/" class="transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank" rel="nofollow">Plesk - زمان‌بندی وظایف</a></div>
+                            </div>
+                        </div>
+                    
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="email">ایمیل</h3>
+                    
+                            <ol class="list-decimal pl-6 mb-4">
+                                <li class="mb-1">به <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">ایمیل</span> بروید.</li>
+                    
+                                <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Driver</code> را به <span class="font-medium">SMTP</span> تغییر دهید.</li>
+                    
+                                <li class="mb-1">باقی فیلدها را با اطلاعات SMTP ارائه شده توسط سرویس‌دهنده SMTP خود پر کنید.</li>
+                            </ol>
+                        </div>
+                    </div>                    
+
+                    <div dir="rtl">
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="authentication">احراز هویت</h3>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="google">گوگل</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://console.cloud.google.com/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">کنسول گوگل کلود</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">یک <a href="https://console.cloud.google.com/projectcreate" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">پروژه جدید</a> ایجاد کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://console.cloud.google.com/apis/dashboard" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">APIs and Services</a> بروید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ، به بخش <a href="https://console.cloud.google.com/apis/credentials/consent" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">OAuth Consent Screen</a> بروید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">User Type</code> را به <span class="font-medium">External</span> تنظیم کنید و بر روی دکمه <span class="font-medium">Create</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">جزئیات برنامه خود را پر کرده و بر روی دکمه <span class="font-medium">Save and continue</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در بخش <span class="font-medium">Scopes</span> بر روی دکمه <span class="font-medium">Add or remove scopes</span> کلیک کنید و حوزه‌های <span class="font-medium">userinfo.email</span> و <span class="font-medium">userinfo.profile</span> را انتخاب کنید و مراحل باقی‌مانده را تکمیل کنید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Credentials</a> بروید.</li>
+                    
+                                    <li class="mb-1">بر روی دکمه <span class="font-medium">Create credentials</span> کلیک کنید و سپس <a href="https://console.cloud.google.com/apis/credentials/oauthclient" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">OAuth client ID</a> را انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Application type</code> را به <span class="font-medium">Web application</span> تنظیم کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Authorized redirect URIs</code>، آدرس بازگشت خود را که می‌توانید در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">گوگل</span>.</li>
+                    
+                                    <li class="mb-1">آی‌دی کلاینت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Client ID</code> و کلاینت سکرت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Client secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">گوگل</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="microsoft">مایکروسافت</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://portal.azure.com/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">مایکروسافت آژور</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">App registrations</a> بروید و بر روی دکمه <a href="https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/CreateApplicationBlade/quickStartType~/null/isMSAApp~/false" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">ثبت‌نام جدید</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Supported account types</code> را به <span class="font-medium">فقط حساب‌های شخصی مایکروسافت</span> تنظیم کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Platform</code> را به <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">وب</code> تنظیم کنید، و در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Redirect URI</code>، آدرس بازگشت خود را که می‌توانید در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">مایکروسافت</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">App registrations</a> بروید، بر روی تب <span class="font-medium">تمام برنامه‌ها</span> کلیک کنید و برنامه خود را انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">آی‌دی کلاینت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Application (client) ID</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">مایکروسافت</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <span class="font-medium">Certificates &amp; secrets</span> بروید و سپس بر روی دکمه <span class="font-medium">New client secret</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">مقدار <span class="font-medium">Client secret</span> <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Value</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">مایکروسافت</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="apple">اپل</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://developer.apple.com/account" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">توسعه‌دهنده اپل</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.apple.com/account" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">عضویت اپل</a> بروید.</li>
+                    
+                                    <li class="mb-1">آی‌دی تیم <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Team ID</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">اپل</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">شناسه‌ها</a> بروید و سپس بر روی دکمه <a href="https://developer.apple.com/account/resources/identifiers/add/bundleId" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">اضافه کردن</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">یک <a href="https://developer.apple.com/account/resources/identifiers/bundleId/add/bundle" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">App ID</a> جدید با ویژگی <span class="font-medium">ورود با اپل</span> ایجاد کنید که در زیر فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Capabilities</code> فعال شده باشد.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.apple.com/account/resources/identifiers/list" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">شناسه‌ها</a> بروید و سپس بر روی دکمه <a href="https://developer.apple.com/account/resources/identifiers/add/bundleId" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">اضافه کردن</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">یک <a href="https://developer.apple.com/account/resources/identifiers/serviceId/add/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Service ID</a> جدید ثبت کنید و سپس آن را از فهرست انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">گزینه <span class="font-medium">ورود با اپل</span> را فعال کرده و بر روی دکمه <span class="font-medium">Configure</span> کلیک کنید و در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Return URLs</code> آدرس بازگشت خود را که می‌توانید در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">اپل</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">آی‌دی <span class="font-medium">Service ID</span> <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Identifier</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">اپل</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.apple.com/account/resources/authkeys/list" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">کلیدها</a> بروید و سپس بر روی دکمه <a href="https://developer.apple.com/account/resources/identifiers/add/bundleId" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">اضافه کردن</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">گزینه <span class="font-medium">ورود با اپل</span> را فعال کرده و بر روی دکمه <span class="font-medium">Configure</span> کلیک کنید و فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Primary App ID</code> را تنظیم کرده و کلید خود را ایجاد کنید.</li>
+                    
+                                    <li class="mb-1">آی‌دی <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Key ID</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">احراز هویت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">اپل</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">بر روی دکمه <span class="font-medium">Download</span> کلیک کنید و فایل دانلود شده را با یک ویرایشگر متن باز کنید و محتوای <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">کلید خصوصی</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">اپل</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div dir="rtl">
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="captcha">کپچا</h3>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="recaptcha">reCAPTCHA</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://www.google.com/recaptcha/admin/create" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Google reCAPTCHA</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">بر روی دکمه <a href="https://www.google.com/recaptcha/admin/create" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">ایجاد</a> کلیک کنید تا یک سایت جدید ثبت کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <strong class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">نوع reCAPTCHA</strong> را به <span class="font-medium">Challenge (v2)</span> و سپس به <span class="font-medium">Invisible reCAPTCHA badge</span> تنظیم کنید و سایر فیلدها را پر کنید.</li>
+                    
+                                    <li class="mb-1">کلید سایت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Site key</code> و کلید مخفی <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Driver</code> را به <span class="font-medium">reCAPTCHA</span> در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> تغییر دهید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="hcaptcha">hCaptcha</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://dashboard.hcaptcha.com/login" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">hCaptcha</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">یک <a href="https://dashboard.hcaptcha.com/sites/new" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">سایت</a> جدید ایجاد کنید.</li>
+                    
+                                    <li class="mb-1">سایر فیلدها را با اطلاعات خواسته شده پر کنید.</li>
+                    
+                                    <li class="mb-1">کلید سایت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Site key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از صفحه <a href="https://dashboard.hcaptcha.com/settings" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">تنظیمات</a> کلید مخفی <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Driver</code> را به <span class="font-medium">hCaptcha</span> در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> تغییر دهید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="turnstile">Turnstile</h4>
+                    
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://dash.cloudflare.com/login" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Cloudflare</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <span class="font-medium">Turnstile</span> بروید.</li>
+                    
+                                    <li class="mb-1">بر روی <span class="font-medium">افزودن سایت</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <strong class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800   ">حالت ویجت</strong> را به <span class="font-medium">نامرئی</span> تنظیم کنید و سایر فیلدها را پر کنید.</li>
+                    
+                                    <li class="mb-1">کلید سایت <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Site key</code> و کلید مخفی <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">تنظیمات <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">مقدار فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Driver</code> را به <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Turnstile</code> در بخش <span class="inline-flex font-medium items-center">مدیریت <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414ل4 4a1 1 0 010 1.414ل-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></span> <span class="inline-flex font-medium items-center">کپچا</span> تغییر دهید.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div dir="rtl">
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="payment-processors">پردازشگرهای پرداخت</h3>
+                    
+                            <p class="mb-4">
+                                برای فعال‌سازی هر یک از پردازشگرهای پرداخت، نیاز به یک لایسنس <span class="font-medium">Extended</span> دارید. پردازشگرهای پرداخت می‌توانند از بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت</span> فعال شوند.
+                            </p>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="idpay">آیدی‌پی (IDPay)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">به وبسایت <a href="https://idpay.ir" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">آیدی‌پی</a> بروید.</li>
+                    
+                                    <li class="mb-1">در منو، روی <span class="font-medium">ورود یا ثبت‌نام</span> کلیک کنید و حساب کاربری خود را تکمیل کنید و درگاه پرداخت برای سایت خود بسازید.</li>
+                    
+                                    <li class="mb-1">نوع بازگشت درگاه را روی متود پست (POST) قرار دهید.</li>
+                    
+                                    <li class="mb-1">به بخش <span class="font-medium">مدیریت > تنظیمات > پردازشگرهای پرداخت > آیدی‌پی</span> بروید.</li>
+                    
+                                    <li class="mb-1">کلید API خود را وارد کنید و حالت آزمایشی (sandbox) را روی <span class="font-medium">خیر</span> تنظیم کنید و ذخیره کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="paypal">پی‌پال (PayPal)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">PayPal</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">My apps &amp; credentials</a> بروید، روی دکمه <span class="font-medium">Live</span> کلیک کنید و سپس روی دکمه <span class="font-medium">Create app</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Client ID</code> و <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > پی‌پال</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">My apps &amp; credentials</a> بروید، روی دکمه <span class="font-medium">Live</span> کلیک کنید و سپس اپلیکیشن خود را انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">به پایین صفحه بروید و در بخش <span class="font-medium">LIVE WEBHOOKS</span> روی دکمه <span class="font-medium">Add webhook</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Webhook URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > پی‌پال</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">در بخش <span class="font-medium">Events types</span> گزینه <span class="font-medium">All events</span> را انتخاب کنید و تغییرات را ذخیره کنید.</li>
+                    
+                                    <li class="mb-1">به بخش <a href="https://developer.paypal.com/developer/applications" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">My apps &amp; credentials</a> بروید، روی دکمه <span class="font-medium">Live</span> کلیک کنید و سپس اپلیکیشن خود را انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">کد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Webhook ID</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > پی‌پال</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="stripe">استرایپ (Stripe)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://dashboard.stripe.com/login" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Stripe</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Developers</span> در داشبورد استرایپ بروید و روی <a href="https://dashboard.stripe.com/account/apikeys" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">API Keys</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Publishable key</code> و <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > استرایپ</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Developers</span> در داشبورد استرایپ بروید و روی <a href="https://dashboard.stripe.com/account/webhooks" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Webhooks</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">روی <span class="font-medium">Add a new endpoint</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Endpoint URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > استرایپ</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <span class="font-medium">events to listen to</span>، روی <span class="font-medium">Select all events</span> کلیک کنید و سپس روی دکمه <span class="font-medium">Add events</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Add endpoint</span> کلیک کنید تا وبهوک شما ایجاد شود.</li>
+                    
+                                    <li class="mb-1">کد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Signing secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > استرایپ</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="razorpay">ریزورپی (Razorpay)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://dashboard.razorpay.com/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Razorpay</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Settings</span> در داشبورد ریزورپی بروید و روی <a href="https://dashboard.razorpay.com/app/keys" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">API Keys</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Generate key</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Key ID</code> و <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Key secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > ریزورپی</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Settings</span> در داشبورد ریزورپی بروید و روی <a href="https://dashboard.razorpay.com/app/webhooks" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Webhooks</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">روی <span class="font-medium">Add new webhook</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Webhook URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > ریزورپی</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <span class="font-medium">Secret</span>، کد محرمانه خود را وارد کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <span class="font-medium">Active events</span>، همه رویدادهای <span class="font-medium">Payment</span> و <span class="font-medium">Subscription</span> را انتخاب کنید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Create webhook</span> کلیک کنید تا وبهوک شما ایجاد شود.</li>
+                    
+                                    <li class="mb-1">کد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > ریزورپی</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="paystack">پِی‌استک (Paystack)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://dashboard.paystack.com/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Paystack</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Settings</span> در داشبورد پِی‌استک بروید و روی <a href="https://dashboard.paystack.com/#/settings/developer" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">API Keys &amp; Webhooks</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Public key</code> و <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > پِی‌استک</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از نوار منو به بخش <span class="font-medium">Settings</span> در داشبورد پِی‌استک بروید و روی <a href="https://dashboard.paystack.com/#/settings/developer" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">API Keys &amp; Webhooks</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Webhook URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > پِی‌استک</span> پیدا کنید، وارد کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="coinbase">کوین‌بیس (Coinbase)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://commerce.coinbase.com/signin" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Coinbase</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <span class="font-medium">Settings</span> در داشبورد کوین‌بیس بروید و به بخش <span class="font-medium">API keys</span> بروید.</li>
+                    
+                                    <li class="mb-1">یک کلید API ایجاد کنید و آن را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > کوین‌بیس</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <span class="font-medium">Settings</span> در داشبورد کوین‌بیس بروید و به بخش <span class="font-medium">Webhook subscriptions</span> بروید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Add an endpoint</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Endpoint URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > کوین‌بیس</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">از منوی سمت چپ به بخش <span class="font-medium">Settings</span> در داشبورد کوین‌بیس بروید و به بخش <span class="font-medium">Webhook subscriptions</span> بروید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Show shared secret</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Webhook shared secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > کوین‌بیس</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="crypto.com">کریپتو‌دات‌کام (Crypto.com)</h4>
+                                <ol class="list-decimal pl-6 mb-4">
+                                    <li class="mb-1">وارد حساب <a href="https://merchant.crypto.com/" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Crypto.com</a> خود شوید.</li>
+                    
+                                    <li class="mb-1">از منوی بالا به بخش <span class="font-medium">Integrations</span> در داشبورد Crypto.com بروید و روی <a href="https://merchant.crypto.com/integration/api_keys" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">API Keys</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Publishable key</code> و <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Secret key</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > Crypto.com</span> کپی کنید.</li>
+                    
+                                    <li class="mb-1">از منوی بالا به بخش <span class="font-medium">Integrations</span> در داشبورد Crypto.com بروید و روی <a href="https://merchant.crypto.com/integration/webhooks" target="_blank" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300">Webhooks</a> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">روی دکمه <span class="font-medium">Add webhook</span> کلیک کنید.</li>
+                    
+                                    <li class="mb-1">در فیلد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Payload URL</code>، آدرس وبهوک خود را که می‌توانید در <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > Crypto.com</span> پیدا کنید، وارد کنید.</li>
+                    
+                                    <li class="mb-1">کد <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Signature secret</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پردازشگرهای پرداخت > Crypto.com</span> کپی کنید.</li>
+                                </ol>
+                            </div>
+                    
+                            <div class="mt-8">
+                                <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24" id="bank">بانک</h4>
+                                <ul class="list-disc mb-4 pl-6">
+                                    <li class="mb-1">تمامی فیلدها اختیاری هستند.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="mb-12">
+                        <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="advanced">پیشرفته</h3>
+                    
+                        <div class="mt-8">
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">مرور امن گوگل</h4>
+                    
+                            <ol class="list-decimal pl-6 mb-4">
+                                <li class="mb-1">
+                                    دستورالعمل <a href="https://developers.google.com/safe-browsing/v4/get-started" rel="nofollow" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" target="_blank">مرور امن گوگل</a> را دنبال کنید تا یک <span class="font-medium">کلید API</span> دریافت کنید.
+                                </li>
+                                <li class="mb-1">
+                                    کلید <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">API</code> را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > پیشرفته > مرور امن گوگل</span> کپی کنید.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <hr class="border-neutral-900/5 dark:border-neutral-100/10 my-12">
+                    
+                    <div>
+                        <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="update">بروزرسانی</h2>
+                    
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="backing-up">پشتیبان‌گیری</h3>
+                    
+                            <p class="bg-amber-400/20 dark:bg-amber-600/20 text-amber-800 dark:text-amber-400 rounded px-4 py-3 mb-4">قبل از بروزرسانی نرم‌افزار، باید یک پشتیبان کامل از وب‌سایت خود بگیرید.</p>
+                    
+                            <p class="bg-amber-400/20 dark:bg-amber-600/20 text-amber-800 dark:text-amber-400 rounded px-4 py-3 mb-4">اگر هرگونه تغییری در فایل‌های نرم‌افزار انجام داده‌اید، تغییرات شما از بین خواهند رفت.</p>
+                        </div>
+                    
+                        <div class="mb-12">
+                            <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="updating">بروزرسانی</h3>
+                    
+                            <ol class="list-decimal pl-6 mb-4">
+                                <li class="mb-1">یک پشتیبان از فایل <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">.env</code> که بر روی سرور شما قرار دارد، تهیه کنید.</li>
+                                <li class="mb-1">همه فایل‌های موجود در سرور خود را با فایل‌های موجود در پوشه <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">Software</code> جایگزین کنید.</li>
+                                <li class="mb-1">فایل <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">.env</code> خود را در سرور بازگردانید.</li>
+                                <li class="mb-1">به آدرس <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">https://example.com/update</code> رفته و از راهنمای بروزرسانی پیروی کنید.<sup>1</sup></li>
+                            </ol>
+                    
+                            <ol class="list-decimal pl-6 mb-4 text-sm text-neutral-500 dark:text-neutral-400">
+                                <li class="mb-1">بروزرسانی‌هایی که تغییرات در پایگاه داده ندارند، در راهنمای بروزرسانی نمایش داده نمی‌شوند.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+
+                <hr class="border-neutral-900/5 dark:border-neutral-100/10 my-12">
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-50 mb-4 scroll-mt-24" id="faq">سوالات متداول</h2>
+                
+                    <ul class="space-y-12">       
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">آیا نصب نرم‌افزار در قیمت شامل می‌شود؟</h4>
+                            <div>خیر، نصب نرم‌افزار شامل قیمت نمی‌شود. ما خدمات نصب را با هزینه اضافی ارائه می‌دهیم. لطفاً بخش <a href="https://lunatio.com/services" class="font-medium transition hover:underline text-violet-500 hover:text-violet-600 dark:text-violet-400 dark:hover:text-violet-300" data-scroll-to="75">خدمات</a> ما را برای جزئیات بیشتر بررسی کنید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">چگونه می‌توانم وب‌سایت خود را ترجمه کنم؟</h4>
+                            <div>یک نسخه از فایل زبان پیش‌فرض <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">en.json</code> که در پوشه <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">/lang</code> قرار دارد، ایجاد کرده و آن را مطابق نیاز خود تغییر دهید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">کد CSS سفارشی خود را کجا می‌توانم اضافه کنم؟</h4>
+                            <div>شما می‌توانید کد CSS سفارشی خود را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > ظاهر > CSS سفارشی</span> اضافه کنید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">کد JS سفارشی خود را کجا می‌توانم اضافه کنم؟</h4>
+                            <div>شما می‌توانید کد JS سفارشی خود را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > عمومی > JS سفارشی</span> اضافه کنید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">کد واحد تبلیغاتی خود را کجا می‌توانم اضافه کنم؟</h4>
+                            <div>کد واحد تبلیغاتی را می‌توان در فایل‌های قالب HTML اضافه کرد.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">فایل‌های قالب HTML را کجا می‌توانم پیدا کنم؟</h4>
+                            <div>فایل‌های قالب HTML در پوشه <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">/resources/views</code> قرار دارند. به عنوان مثال برای ویرایش صفحه اصلی، باید فایل <code class="inline-block text-xs px-1 py-0.5 bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-bold rounded">/resources/views/home/index.blade.php</code> را ویرایش کنید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">چگونه می‌توانم یک صفحه سفارشی ایجاد کنم؟</h4>
+                            <div>شما می‌توانید صفحه سفارشی خود را در بخش <span class="inline-flex font-medium items-center">مدیریت > صفحات</span> ایجاد کنید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">چگونه می‌توانم صفحات شرایط خدمات، سیاست حفظ حریم خصوصی و سیاست کوکی‌ها را تنظیم کنم؟</h4>
+                            <div>شما می‌توانید لینک‌های صفحات قانونی خود را در بخش <span class="inline-flex font-medium items-center">مدیریت > تنظیمات > قانونی</span> قرار دهید.</div>
+                        </li>
+                
+                        <li>
+                            <h4 class="text-neutral-900 dark:text-neutral-50 font-semibold mb-2 scroll-mt-24">دامنه سفارشی من کار نمی‌کند، چرا؟</h4>
+                            <div>اگر از یک محیط مدیریت شده (cPanel، Plesk و غیره) استفاده می‌کنید، باید دامنه سفارشی خود را به صورت دستی در پنل خود اضافه کنید و همان ریشه دایرکتوری را که نرم‌افزار نصب شده است، تنظیم کنید.</div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full border-t border-neutral-900/5 dark:border-neutral-100/10">
+        <div class="max-w-screen-lg mx-auto px-4">
+            <nav class="py-12">
+                <div class="text-neutral-500 mt-4">© 2024 Native City. کلیه حقوق محفوظ است.</div>
+            </nav>
+        </div>
+    </footer>
+    
+</div>
+
+</body></html>
