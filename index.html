@@ -151,12 +151,28 @@
 <a href="#screen" class="log left rt-bg rt-bold rt-35px rt-sorme"><i class="fab fa-android"></i> مشاهده دمو</a>
 <a href="https://www.rtl-theme.com" target="_blank" class="reg left rt-bold rt-35px rt-fff"><i class="fa fa-shopping-cart"></i> خرید از راستچین</a>
 </div>
-<a href="#download" 
-   style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #4CAF50; color: white; font-size: 18px; font-weight: bold; border-radius: 8px; text-decoration: none; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease;" 
-   onmouseover="this.style.backgroundColor='#45a049';" 
-   onmouseout="this.style.backgroundColor='#4CAF50';">
+<a href="#screen" 
+   style="display: inline-flex; align-items: center; padding: 10px 20px; background-color: #4CAF50; color: white; font-size: 18px; font-weight: bold; border-radius: 8px; text-decoration: none; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease; display: none;" 
+   class="download-button">
    <i class="fab fa-android" style="margin-left: 8px; font-size: 24px;"></i> دانلود
 </a>
+
+<style>
+@media only screen and (max-width: 767px) {
+    /* برای موبایل */
+    .download-button {
+        display: inline-flex !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* برای تبلت، دسکتاپ و تلویزیون */
+    .download-button {
+        display: none !important;
+    }
+}
+</style>
+	
 
 </div>
 </header>
