@@ -288,7 +288,9 @@ header.fixed #menu-btn{background-color:#fff;color:#333}
 .about-us-box .side1.right{width:33.33%;text-align:center;padding:45px 0}
 .about-us-box .side1.right .about-title{margin-bottom:5px}
 .about-us-box .side1.left{width:66.66%}
-
+html {
+  scroll-behavior: smooth;
+}
 .about-us-box .side1 .item{
 	width:50%
 }
